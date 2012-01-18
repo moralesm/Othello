@@ -1,0 +1,22 @@
+class Game:
+    
+    #GameBoard
+    board = []
+    for i in range(8):
+            board.append([])
+            for j in range(8):
+                board[i].append(0)
+
+    board[3][3] = 1
+    board[3][4] = -1
+    board[4][4] = 1
+    board[4][3] = -1
+
+    #printing(board)
+
+    def printing(board2):
+        for i in range(8):
+            print(board2[i])
+            print('\n')
+
+    printing(board)
